@@ -1,0 +1,35 @@
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .payment-box {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .success {
+    background-color: #e6ffed;
+    border: 2px solid #00b894;
+  }
+  
+  .error {
+    background-color: #ffe6e6;
+    border: 2px solid #d63031;
+  }
+  
+  .payment-box button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,81 @@
+/* Email.css */
+.email-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f4f6f8;
+    padding: 20px;
+  }
+  
+  .email-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .email-icon {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .email-card h2 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.75rem;
+  }
+  
+  .email-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0 10px;
+    text-align: left;
+  }
+  
+  .info-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    flex-shrink: 0;
+  }
+  
+  .email-info p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .sub-info {
+    font-size: 0.95rem;
+    color: #888;
+    margin-top: 8px;
+  }
+  
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-icon {
+    margin-right: 8px;
+    font-size: 1.1rem;
+  }
+  
