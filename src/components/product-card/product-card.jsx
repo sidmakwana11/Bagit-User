@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
   useEffect(() => {
     console.log("Product received:", product);
     if (product?.image) {
-      console.log("Full image URL:", `http://localhost:5001${product.image}`);
+      console.log("Full image URL:", `https://bagit-product-service.onrender.com${product.image}`);
     } else {
       console.warn("⚠️ No product.image found — using fallback image");
     }
@@ -29,7 +29,7 @@ const ProductCard = ({ product }) => {
         className="product-img"
         src={
           product.image
-            ? `http://localhost:5001${product.image}`
+            ? `https://bagit-product-service.onrender.com${product.image}`
             : "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS2u2WwsbBPPMAMd64lz7oYUlzso1nlAaFFJAVi3oXrSS63GfbQTKfuLvSNWYKJWxdcFFyeTPSR2pIqgLZWaVxv_H9Ltxb5Qy7noudCDZJg6O_XAxXe4O57w1vOeqFi24MViqBg0-kPs0I&usqp=CAc"
         }
         alt={product.name || "Product Image"}
