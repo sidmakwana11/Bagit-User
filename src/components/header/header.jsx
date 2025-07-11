@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaUser, FaBoxOpen, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useCart } from '../../components/Context/CartContext';
-import Logo from '../../assets/BagLogo.png';
+// import Logo from '../../assets/BagLogo.png';
 import Swal from 'sweetalert2';
 import './header.css';
 
@@ -74,7 +74,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-title">
-        <img className="header-img" src={Logo} alt="BagLogo" />
+{/*         <img className="header-img" src={Logo} alt="BagLogo" /> */}
         <Link to="/">Bag It</Link>
       </div>
 
