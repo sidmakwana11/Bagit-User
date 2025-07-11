@@ -10,7 +10,7 @@ const Products = () => {
   const [priceFilter, setPriceFilter] = useState("all");
 
   useEffect(() => {
-    fetch(`http://localhost:5003/api/categories/byCategory?category=${subSubCategory}`)
+    fetch(`https://bagit-category-service.onrender.com/api/categories/byCategory?category=${subSubCategory}`)
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
