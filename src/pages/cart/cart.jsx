@@ -53,7 +53,7 @@ const Cart = () => {
                   className="cart-item-image"
                   src={
                     item.image?.startsWith("/uploads/")
-                      ? `http://localhost:5001${item.image}`
+                      ? `https://bagit-product-service.onrender.com${item.image}`
                       : item.image || "https://via.placeholder.com/150"
                   }
                   alt={item.name}
