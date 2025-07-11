@@ -5,7 +5,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import "react-toastify/dist/ReactToastify.css";
 import "./checkout.css";
 
-const stripePromise = loadStripe("pk_test_51RgLLqPYOzBd0QMIoOjzYy2sXWEVVHW9fQFP8uqCuwLRZGMomO8XZaQyBEGpZKHeTJq2c4X3YZIjqIWXBiWpn8Zz00gWsmJ5Gd"); // Replace with your actual Stripe public key
+const stripePromise = loadStripe(process.env.Strip_publishkey); 
  
 const Checkout = () => {
   const { state } = useLocation();
