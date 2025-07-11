@@ -9,7 +9,7 @@ const SearchResults = () => {
 
   useEffect(() => {
     if (query) {
-      fetch(`http://localhost:5000/api/products/search?query=${query}`)
+      fetch(`https://bagit-admin-service.onrender.com/api/products/search?query=${query}`)
         .then((res) => res.json())
         .then((data) => setProducts(data))
         .catch((err) => console.error('Search error:', err));
