@@ -46,7 +46,7 @@ const Checkout = () => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch("http://localhost:5001/api/create-checkout-session", {
+      const response = await fetch("https://bagit-product-service.onrender.com/api/create-checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,7 +83,7 @@ const Checkout = () => {
                 className="checkout-item-image"
                 src={
                   item.image?.startsWith("/uploads/")
-                    ? `http://localhost:5001${item.image}`
+                    ? `https://bagit-product-service.onrender.com${item.image}`
                     : item.image || "https://via.placeholder.com/150"
                 }
                 alt={item.name}
